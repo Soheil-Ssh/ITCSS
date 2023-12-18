@@ -11,10 +11,38 @@ $font-size-xl: $font-size-base * 1.875;
 
 //#endregion
 
+//#region Space
+
+$spacer: 1rem;
+
+//#endregion
+
 //#region Body
 
 $body-color: $dark;
 $body-bg: $gray-300;
 $body-font-family: $font-family-base;
+
+//#endregion
+
+//#region Header
+
+$header-bg: $primary;
+
+//#endregion
+
+//#region Header navbar
+
+$header-navbar-padding: $spacer 0;
+
+// header navbar brand
+$header-navbar-brand-color: $white;
+
+// header navbar menu
+$header-navbar-menu-gap: $spacer * 1.5;
+
+// header navbar menu item
+$header-navbar-menu-item-color: $secondary;
+$header-navbar-menu-item-hover-color: $white;
 
 //#endregion

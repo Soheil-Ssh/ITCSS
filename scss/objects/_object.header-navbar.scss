@@ -1,0 +1,24 @@
+.header {
+	&-navbar {
+		padding: $header-navbar-padding;
+
+		&-brand {
+			color: $header-navbar-brand-color;
+		}
+
+		&-menu {
+			@include flex();
+			gap: $header-navbar-menu-gap;
+
+			&-item {
+				a {
+					color: $header-navbar-menu-item-color;
+
+					&:hover {
+						color: $header-navbar-menu-item-hover-color;
+					}
+				}
+			}
+		}
+	}
+}
