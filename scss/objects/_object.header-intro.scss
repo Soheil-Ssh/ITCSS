@@ -1,0 +1,23 @@
+.header {
+	&-intro {
+		padding: $header-intro-padding;
+
+		&-img {
+			img {
+				width: 100%;
+			}
+		}
+
+		&-text {
+			&-title {
+				color: $header-intro-text-title-color;
+				font-size: $header-intro-text-title-font-size;
+			}
+
+			&-subtitle {
+                margin-top: $header-intro-text-subtitle-margin-top;
+				line-height: $header-intro-text-subtitle-line-height;
+			}
+		}
+	}
+}

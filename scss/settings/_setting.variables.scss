@@ -35,12 +35,12 @@ $grid-xl: 1200px;
 $grid-xxl: 1400px;
 
 $grid-breakpoints: (
-    xs: $grid-xs,
-    sm: $grid-sm,
-    md: $grid-md,
-    lg: $grid-lg,
-    xl: $grid-xl,
-    xxl: $grid-xxl
+	xs: $grid-xs,
+	sm: $grid-sm,
+	md: $grid-md,
+	lg: $grid-lg,
+	xl: $grid-xl,
+	xxl: $grid-xxl,
 );
 
 //#endregion
@@ -72,5 +72,19 @@ $header-navbar-menu-gap: $spacer * 1.5;
 // header navbar menu item
 $header-navbar-menu-item-color: $secondary;
 $header-navbar-menu-item-hover-color: $white;
+
+//#endregion
+
+//#region Header intro
+
+$header-intro-padding: $spacer * 4 0;
+
+// header intro text title
+$header-intro-text-title-color: $white;
+$header-intro-text-title-font-size: $font-size-xl;
+
+// header intro text subtitle
+$header-intro-text-subtitle-margin-top: $spacer * 1.75;
+$header-intro-text-subtitle-line-height: 1.6;
 
 //#endregion
