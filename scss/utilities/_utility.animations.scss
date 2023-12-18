@@ -1,0 +1,11 @@
+%trans {
+    @include css-prefix(transition, all 0.3s ease-in-out);
+}
+
+%trans-sm {
+    @include css-prefix(transition, all 0.175s ease-in-out);
+}
+
+%trans-lg {
+    @include css-prefix(transition, all 0.5s ease-in-out);
+}
