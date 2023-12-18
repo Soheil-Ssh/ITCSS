@@ -1,0 +1,20 @@
+//#region Fonts
+
+$font-family-base: 'montserrat', sans-serif;
+
+$font-size-base: 1rem;
+$font-size-xxs: $font-size-base * 0.5;
+$font-size-xs: $font-size-base * 0.7;
+$font-size-sm: $font-size-base * 0.875;
+$font-size-lg: $font-size-base * 1.25;
+$font-size-xl: $font-size-base * 1.875;
+
+//#endregion
+
+//#region Body
+
+$body-color: $dark;
+$body-bg: $gray-300;
+$body-font-family: $font-family-base;
+
+//#endregion
