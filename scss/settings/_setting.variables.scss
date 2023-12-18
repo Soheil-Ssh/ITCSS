@@ -25,6 +25,26 @@ $transition-lg: all 0.5s ease-in-out;
 
 //#endregion
 
+//#region Grid sizes
+
+$grid-xs: 0;
+$grid-sm: 576px;
+$grid-md: 768px;
+$grid-lg: 992px;
+$grid-xl: 1200px;
+$grid-xxl: 1400px;
+
+$grid-breakpoints: (
+    xs: $grid-xs,
+    sm: $grid-sm,
+    md: $grid-md,
+    lg: $grid-lg,
+    xl: $grid-xl,
+    xxl: $grid-xxl
+);
+
+//#endregion
+
 //#region Body
 
 $body-color: $dark;
