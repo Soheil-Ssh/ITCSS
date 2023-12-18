@@ -1,3 +1,10 @@
-.header{
-    background-color: $header-bg;
+.header {
+	@include position(relative);
+	background-color: $header-bg;
+
+	&-curve {
+        fill: $header-curve-fill;
+        width: 100%;
+        @include position(absolute);
+    }
 }
