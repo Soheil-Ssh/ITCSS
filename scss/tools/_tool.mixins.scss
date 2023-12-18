@@ -1,0 +1,213 @@
+//#region Prefix
+
+@mixin css-prefix($prop, $value...) {
+    -webkit-#{$prop}: #{$value};
+    -moz-#{$prop}: #{$value};
+    -ms-#{$prop}: #{$value};
+    -o-#{$prop}: #{$value};
+    #{$prop}: #{$value};
+}
+
+//#endregion
+
+//#region Font
+
+@mixin font-face($name, $file, $weight, $style) {
+    @font-face {
+        font-family: '#{$name}';
+        src: url('../fonts/#{$file}.eot');
+        src: url('../fonts/#{$file}.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/#{$file}.woff2') format('woff2'),
+        url('../fonts/#{$file}.woff') format('woff'),
+        url('../fonts/#{$file}.ttf') format('truetype');
+        font-weight: $weight;
+        font-style: $style;
+        @content;
+    }
+}
+
+//#endregion
+
+//#region Font style
+
+@mixin font-style($font-size,
+    $font-weight: normal,
+    $line-height: normal,
+    $letter-spacing: normal) {
+    font-size: $font-size;
+
+    @if $font-weight  !=normal {
+        font-weight: $font-weight;
+    }
+
+    @if $line-height==normal {
+        line-height: normal;
+    }
+
+    @else {
+        line-height: #{$line-height / $font-size}em;
+    }
+
+    @if $letter-spacing==normal {
+        letter-spacing: normal;
+    }
+
+    @else {
+        letter-spacing: #{$letter-spacing / $font-size}em;
+    }
+}
+
+//#endregion
+
+//#region Keyframes
+
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+
+    @-moz-keyframes #{$name} {
+        @content;
+    }
+
+    @-o-keyframes #{$name} {
+        @content;
+    }
+
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+//#endregion
+
+//#region Position
+
+@mixin position($podition,
+    $top: none,
+    $right: none,
+    $bottom: none,
+    $left: none) {
+    position: $podition;
+
+    @if $top  !=none {
+        top: $top;
+    }
+
+    @if $right  !=none {
+        right: $right;
+    }
+
+    @if $bottom  !=none {
+        bottom: $bottom;
+    }
+
+    @if $left  !=none {
+        left: $left;
+    }
+}
+
+//#endregion
+
+//#region Flex
+
+@mixin flex($justify: none, $align: none, $wrap: wrap, $direction: none) {
+    display: flex;
+    display: -ms-flexbox;
+    flex-wrap: $wrap;
+    -ms-flex-wrap: $wrap;
+
+    @if $direction  !=none {
+        flex-direction: $direction;
+    }
+
+    @if $justify  !=none {
+        justify-content: $justify;
+    }
+
+    @if $align  !=none {
+        align-items: $align;
+    }
+}
+
+//#endregion
+
+//#region Shadow
+
+@mixin shadow($color, $offset-x: 0, $offset-y: 0.5rem, $blur-radius: 1.5rem, $spread-radius: 0.85rem) {
+    box-shadow: $offset-x $offset-y $blur-radius $spread-radius $color;
+}
+
+//#endregion
+
+//#region Centered
+
+@mixin vertical-center($right: none, $left: none, $position: relative) {
+    position: $position;
+    top: 50%;
+    @include css-prefix(transform, translateY(-50%));
+
+    @if $right  !=none {
+        right: $right;
+    }
+
+    @if $left  !=none {
+        left: $left;
+    }
+}
+
+@mixin horizontal-center($top: none, $bottom: none, $position: relative) {
+    position: $position;
+    left: 50%;
+    @include css-prefix(transform, translateX(-50%));
+
+    @if $top  !=none {
+        top: $top;
+    }
+
+    @if $bottom  !=bottom {
+        bottom: $bottom;
+    }
+}
+
+@mixin centered($position: absolute) {
+    @include position($position, 50%, none, none, 50%);
+    @include css-prefix(transform, translate(-50%, -50%));
+}
+
+//#endregion
+
+
+//#region Breakpoint
+
+@mixin breakpoint($breakpoint) {
+    @media only screen and (min-width: $breakpoint) {
+        @content;
+    }
+}
+
+@mixin breakpoint-max($breakpoint) {
+    @media only screen and (max-width: $breakpoint) {
+        @content;
+    }
+}
+
+@mixin breakpoint-min-max($breakpoint-min, $breakpoint-max) {
+    @media (min-width: $breakpoint-min) and (max-width: $breakpoint-min) {
+        @content;
+    }
+}
+
+//#endregion
+
+
+//#region 
+
+@mixin limit-lines($line) {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+}
+
+//#endregion
