@@ -85,10 +85,16 @@ $header-intro-padding: $spacer * 4 0;
 
 // header intro text title
 $header-intro-text-title-color: $white;
-$header-intro-text-title-font-size: $font-size-xl;
+$header-intro-text-title-font-size: $font-size-xxl;
 
 // header intro text subtitle
 $header-intro-text-subtitle-margin-top: $spacer * 1.75;
 $header-intro-text-subtitle-line-height: 1.6;
+
+//#endregion
+
+//#region Main
+
+$main-padding-top: $spacer * 3;
 
 //#endregion
