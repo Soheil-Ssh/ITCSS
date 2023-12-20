@@ -1,3 +1,5 @@
+//#region General variables
+
 //#region Fonts
 
 $font-family-base: 'montserrat', sans-serif;
@@ -72,6 +74,10 @@ $shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, .05);
 
 //#endregion
 
+//#endregion
+
+//#region Elements variables
+
 //#region Body
 
 $body-color: $dark;
@@ -79,6 +85,10 @@ $body-bg: $gray-300;
 $body-font-family: $font-family-base;
 
 //#endregion
+
+//#endregion
+
+//#region Objects variables
 
 //#region Header
 
@@ -125,10 +135,20 @@ $main-padding-top: $spacer * 3.5;
 
 //#endregion
 
+//#endregion
+
+//#region Components variables
+
+//#endregion
+
+//#region Utilities variables
+
 //#region Para
 
 $para-font-size: $font-size-base;
 $para-line-height: 1.6;
 $para-white-color: $white;
+
+//#endregion
 
 //#endregion
