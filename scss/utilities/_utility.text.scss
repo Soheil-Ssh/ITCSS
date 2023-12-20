@@ -1,0 +1,9 @@
+%para{
+    font-size: $para-font-size;
+    line-height: $para-line-height;
+}
+
+%para-white{
+    @extend %para;
+    color: $para-white-color;
+}
