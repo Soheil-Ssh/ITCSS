@@ -3,6 +3,11 @@
     line-height: $para-line-height;
 }
 
+%para-sm {
+    font-size: $para-font-size-sm;
+    line-height: $para-line-height;
+}
+
 %para-white{
     @extend %para;
     color: $para-white-color;
