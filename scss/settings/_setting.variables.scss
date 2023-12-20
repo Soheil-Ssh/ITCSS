@@ -20,14 +20,6 @@ $spacer: 1rem;
 
 //#endregion
 
-//#region Transitions
-
-$transition: all 0.3s ease-in-out;
-$transition-sm: all 0.175s ease-in-out;
-$transition-lg: all 0.5s ease-in-out;
-
-//#endregion
-
 //#region Grid sizes
 
 $grid-xs: 0;
@@ -157,6 +149,14 @@ $box-radius: $border-radius-xl;
 $para-font-size: $font-size-base;
 $para-line-height: 1.6;
 $para-white-color: $white;
+
+//#endregion
+
+//#region Transitions
+
+$transition: all 0.3s ease-in-out;
+$transition-sm: all 0.175s ease-in-out;
+$transition-lg: all 0.5s ease-in-out;
 
 //#endregion
 
