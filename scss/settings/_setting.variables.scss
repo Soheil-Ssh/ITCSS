@@ -139,6 +139,15 @@ $main-padding-top: $spacer * 3.5;
 
 //#region Components variables
 
+//#region Box
+
+$box-bg: $white;
+$box-padding: $spacer $spacer * 1.5;
+$box-boxshadow: $shadow;
+$box-radius: $border-radius-xl;
+
+//#endregion
+
 //#endregion
 
 //#region Utilities variables
