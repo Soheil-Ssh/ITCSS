@@ -1,6 +1,17 @@
-.box{
-    background-color: $box-bg;
-    box-shadow: $box-boxshadow;
-    padding: $box-padding;
-    border-radius: $box-radius;
-}  
+.box {
+	background-color: $box-bg;
+	box-shadow: $box-boxshadow;
+	padding: $box-padding;
+	border-radius: $box-radius;
+    @extend %text-center;
+
+	&-title {
+		font-size: $box-title-font-size;
+		color: $box-title-color;
+        margin-bottom: $box-title-margin-bottom;
+	}
+
+	&-description {
+		@extend %para-sm;
+	}
+}
