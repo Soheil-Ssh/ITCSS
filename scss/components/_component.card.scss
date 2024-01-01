@@ -1,0 +1,30 @@
+.card {
+	padding: $card-padding;
+	border: $card-border-width $card-border-style $card-border-color;
+	border-radius: $card-radius;
+
+	&-header {
+		padding: $card-header-padding;
+		@extend %text-center;
+
+		&-icon {
+			margin-bottom: $card-header-icon-margin-bottom;
+
+			svg {
+				width: $card-header-icon-width;
+				height: $card-header-icon-height;
+				color: $card-header-icon-color;
+			}
+		}
+
+		&-title {
+			font-size: $card-header-title-font-size;
+		}
+	}
+
+	&-body {
+		p {
+			@extend %para;
+		}
+	}
+}

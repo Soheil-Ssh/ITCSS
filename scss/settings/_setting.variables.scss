@@ -61,9 +61,8 @@ $border-radius-round: 50%;
 
 //#region Shadows
 
-$shadow: 0 10px 15px -3px rgba(0, 0, 0, .1),
-    0 4px 6px -4px rgba(0, 0, 0, .1);
-$shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, .05);
+$shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+$shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 
 //#endregion
 
@@ -151,6 +150,28 @@ $box-radius: $border-radius-xl;
 $box-title-font-size: $font-size-lg;
 $box-title-color: $primary;
 $box-title-margin-bottom: $spacer;
+
+//#endregion
+
+//#region Card
+
+$card-padding: $spacer $spacer;
+$card-border-width: $border-width;
+$card-border-style: $border-style;
+$card-border-color: $gray-500;
+$card-radius: $border-radius-xl;
+
+// card header
+$card-header-padding: $spacer $spacer * 0.5;
+
+// card header icon
+$card-header-icon-width: 3.5rem;
+$card-header-icon-height: $card-header-icon-width;
+$card-header-icon-color: $primary;
+$card-header-icon-margin-bottom: $spacer * 0.5;
+
+// card header title
+$card-header-title-font-size: $font-size-lg;
 
 //#endregion
 
