@@ -1,0 +1,10 @@
+.heading {
+    line-height: $heading-line-height;
+    margin-bottom: $heading-margin-bottom;
+}
+
+@each $size, $value in $heading-font-sizes {
+	.heading.heading-#{$size} {
+		font-size: $value;
+	}
+}
